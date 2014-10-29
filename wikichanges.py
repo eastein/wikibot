@@ -20,7 +20,7 @@ class WikiChanges(object) :
 		entries = d['feed']['entry']
 		entries.reverse()
 		now = datetime.datetime.utcnow()
-		now = now.replace(tzinfo=pytz.utc)
+		now = now.replace(tzinfo=pytz.utc, microsecond=0)
 		for e in entries :
 			url = e['link']['@href']
 			name = e['author']['name']
