@@ -33,9 +33,9 @@ if __name__ == '__main__' :
 
 	(options, args) = parser.parse_args()
 
-	s,n,c,u = args
+	s,n,c,u,k = args
 
-	wc = wikichanges.WikiChanges(u, emit_start=False, max_age=datetime.timedelta(hours=1))
+	wc = wikichanges.WikiChanges(u, emit_start=False, max_age=datetime.timedelta(hours=1), gapi_key=k)
 
 	try :
 		s = WikiBotThread(s,n,c,wc)
