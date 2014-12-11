@@ -5,7 +5,7 @@ import mediorc
 import time
 
 
-POLL_TIME = 10
+POLL_TIME = 2422
 
 class WikiBot(mediorc.IRC):
 
