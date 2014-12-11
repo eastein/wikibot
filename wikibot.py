@@ -12,7 +12,7 @@ class WikiBot(mediorc.IRC) :
 
 	def do_work(self) :
 		now = time.time()
-		if now < self.last_polled + 10 :
+		if now < self.last_polled + 2224 :
 			return
 
 		#try :
